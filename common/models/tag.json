@@ -1,0 +1,29 @@
+{
+  "name": "tag",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "icon": {
+      "type": "string",
+      "default": ""
+    },
+    "desc": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

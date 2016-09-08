@@ -1,0 +1,30 @@
+{
+  "name": "follower",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "temp": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

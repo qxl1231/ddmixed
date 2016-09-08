@@ -1,0 +1,33 @@
+{
+  "name": "ddmixed",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint ."
+  },
+  "dependencies": {
+    "bunyan": "^1.5.1",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "node-uuid": "^1.4.3",
+    "request": "^2.65.0",
+    "restify-clients": "^1.1.1",
+    "underscore": "^1.8.3",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-connector-mongodb": "^1.15.2",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "ddmixed"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "article",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "cover": {
+      "type": "string",
+      "default": ""
+    },
+    "brief": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "views": {
+      "type": "number",
+      "min": 0,
+      "default": 0
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "love_no": {
+      "type": "number",
+      "min": 0,
+      "default": 0
+    },
+    "collect_no": {
+      "type": "number",
+      "min": 0,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "ddUser",
+      "foreignKey": ""
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "tag",
+      "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

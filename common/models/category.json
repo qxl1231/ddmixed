@@ -1,0 +1,35 @@
+{
+  "name": "category",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "icon": {
+      "type": "string",
+      "default": ""
+    },
+    "desc": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articles": {
+      "type": "hasMany",
+      "model": "article",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

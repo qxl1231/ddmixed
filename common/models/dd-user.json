@@ -1,0 +1,55 @@
+{
+  "name": "ddUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "signature": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articles": {
+      "type": "hasMany",
+      "model": "article",
+      "foreignKey": ""
+    },
+    "followings": {
+      "type": "hasMany",
+      "model": "following",
+      "foreignKey": ""
+    },
+    "followers": {
+      "type": "hasMany",
+      "model": "follower",
+      "foreignKey": ""
+    },
+    "collect_articles": {
+      "type": "hasMany",
+      "model": "article",
+      "foreignKey": ""
+    },
+    "love_articles": {
+      "type": "hasMany",
+      "model": "article",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

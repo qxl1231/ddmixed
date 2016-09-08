@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ddUser": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "following": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "follower": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "article": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "category": {
+    "dataSource": "dida",
+    "public": true
+  },
+  "tag": {
+    "dataSource": "dida",
+    "public": true
+  }
+}
